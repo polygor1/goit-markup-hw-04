@@ -4,7 +4,11 @@
   --logo-font: 'Raleway', sans-serif;
   --logo-color: #2196f3;
   --touch-color: #2196f3;
-  --filter-color: #f5f4fa;
+  --ico-accent-color: #2196f3;
+  --ico-ligt-accent-color: #ffffff;
+  --ico-regular-color: #afb1b8;
+  --background-ico-ftrs-color: #f5f4fa;
+  --srsh-btn-color: #f5f4fa;
   --page-color: #ffffff;
   --title-color: #212121;
   --regular-color: #757575;
@@ -187,10 +191,27 @@ h4 {
   color: var(--regular-color);
   display: flex;
   justify-content: space-between;
-  flex-flow: row;
 }
-.features-list li {
+.features-card {
+  display: flex;
+  flex-flow: column;
   width: 270px;
+}
+.features-icon-item {
+  display: flex;
+  padding: auto;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background: var(--background-ico-ftrs-color);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+.icon-ftrs {
+  height: 70px;
+  width: 70px;
+  fill: var(--ico-regular-color);
 }
 .features-text {
   font-size: 14px;
@@ -203,6 +224,8 @@ h4 {
 
 .inside {
   padding-top: 0;
+  justify-content: center;
+  align-self: center;
 }
 
 .inside-list {
@@ -215,6 +238,7 @@ h4 {
 
 .team {
   background-color: var(--background-team-color);
+  text-align: center;
 }
 .team-list {
   display: flex;
@@ -245,7 +269,39 @@ h4 {
 .team-metier {
   color: var(--regular-color);
   margin-top: 10px;
+  margin-bottom: 16px;
 }
+.team-icons-list {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* align-self: center; */
+}
+.team-icons-list li {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-icons-list li:not(last-child) {
+  margin-right: 10px;
+}
+.icon-socnet {
+  width: 20px;
+  height: 20px;
+  /* padding: auto; */
+  justify-content: center;
+  align-items: center;
+  fill: var(--ico-regular-color);
+}
+.icon-socnet:hover,
+.team-icons-list li:hover {
+  background-color: var(--ico-accent-color);
+  fill: var(--ico-ligt-accent-color);
+}
+
 /* ---REGULAR CUSTOMERS */
 
 .customers {
@@ -307,7 +363,7 @@ h4 {
   line-height: 1.625;
   letter-spacing: 0.03em;
   color: var(--title-color);
-  background-color: var(--filter-color);
+  background-color: var(--srsh-btn-color);
   padding: 6px 22px;
   border: none;
   border-radius: 4px;
@@ -339,9 +395,7 @@ h4 {
   color: var(--title-color);
   margin-top: 50px;
 }
-.portfolio .content {
-  margin-top: 34px;
-}
+
 .portfolio-list {
   display: flex;
   flex-flow: row wrap;
