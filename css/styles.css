@@ -7,6 +7,7 @@
   --ico-accent-color: #2196f3;
   --ico-ligt-accent-color: #ffffff;
   --ico-regular-color: #afb1b8;
+  --ico-custom-color: #afb1b8;
   --background-ico-ftrs-color: #f5f4fa;
   --srsh-btn-color: #f5f4fa;
   --page-color: #ffffff;
@@ -274,8 +275,6 @@ h4 {
 .team-icons-list {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  /* align-self: center; */
 }
 .team-icons-list li {
   width: 44px;
@@ -291,7 +290,6 @@ h4 {
 .icon-socnet {
   width: 20px;
   height: 20px;
-  /* padding: auto; */
   justify-content: center;
   align-items: center;
   fill: var(--ico-regular-color);
@@ -304,9 +302,33 @@ h4 {
 
 /* ---REGULAR CUSTOMERS */
 
-.customers {
+.customers-card {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid vae(--ico-regular-color);
+  box-sizing: border-box;
+  border-radius: 4px;
 }
-
+.customers-icon-item {
+  display: flex;
+  padding: auto;
+  margin-bottom: 30px;
+  width: 106px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+.icon-custom {
+  fill: var(--ico-custom-color);
+}
+.icon-custom:hover,
+.customers-card:hover {
+  /* background-color: var(--ico-accent-color); */
+  fill: var(--ico-accent-color);
+}
 /* ---FOOTER--- */
 
 .footer {
