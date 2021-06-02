@@ -3,6 +3,9 @@
   --main-font: 'Roboto', sans-serif;
   --logo-font: 'Raleway', sans-serif;
   --logo-color: #2196f3;
+  --logo-light: #fff;
+  --logo-dark: #000;
+
   --touch-color: #2196f3;
   --ico-accent-color: #2196f3;
   --ico-ligt-accent-color: #ffffff;
@@ -65,6 +68,10 @@ h4 {
   font-weight: 700;
   color: var(--title-color);
 }
+ul {
+  /* убрали маркеры у списка */
+  list-style: none;
+}
 .section {
   padding: 94px 0;
 }
@@ -97,13 +104,14 @@ h4 {
   line-height: 1.192;
   letter-spacing: 0.03em;
   margin-right: 93px;
+  color: var(--logo-dark);
 }
 .logoweb {
   color: var(--logo-color);
 }
-.navigation {
+/* .navigation {
   color: var(--title-color);
-}
+} */
 .navigation,
 .eadress {
   font-weight: 500;
@@ -119,6 +127,13 @@ h4 {
 }
 .nav-list-item {
   margin-right: 50px;
+  color: var(--title-color);
+}
+.nav-list-str {
+  color: var(--title-color);
+}
+.current {
+  color: var(--touch-color);
 }
 .nav-list-str:hover,
 .nav-list-str:focus,
@@ -129,13 +144,13 @@ h4 {
   color: var(--touch-color);
 }
 .eadress {
-  color: var(--regular-color);
   width: 1200px;
   justify-content: flex-end;
 }
 .eadr-mail,
 .eadr-tel {
   margin-left: 50px;
+  color: var(--regular-color);
 }
 
 /* --- HERO--- */
@@ -228,11 +243,12 @@ h4 {
   justify-content: center;
   align-self: center;
 }
-
+.inside h2 {
+  margin-bottom: 50px;
+}
 .inside-list {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
 }
 
 /* ---TEAM--- */
@@ -241,10 +257,12 @@ h4 {
   background-color: var(--background-team-color);
   text-align: center;
 }
+.team h2 {
+  margin-bottom: 50px;
+}
 .team-list {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
 }
 .team-card {
   background: #ffffff;
@@ -302,6 +320,17 @@ h4 {
 
 /* ---REGULAR CUSTOMERS */
 
+.customers {
+  padding: 120px 0 96зч;
+}
+.customers-titul {
+  margin-bottom: 50px;
+}
+.customers-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .customers-card {
   display: flex;
   width: 170px;
@@ -314,7 +343,6 @@ h4 {
 .customers-icon-item {
   display: flex;
   padding: auto;
-  /* margin-bottom: 30px; */
   width: 106px;
   height: 60px;
   justify-content: center;
@@ -322,6 +350,7 @@ h4 {
 }
 .icon-custom {
   fill: var(--ico-custom-color);
+  height: 60px;
 }
 .icon-custom:hover {
   fill: var(--ico-accent-color);
@@ -329,6 +358,7 @@ h4 {
 .customers-card:hover {
   border: 1px solid var(--ico-accent-color);
 }
+
 /* ---FOOTER--- */
 
 .footer {
@@ -342,6 +372,9 @@ h4 {
 .footer .container {
   margin-top: 0px;
 }
+.footer .logo {
+  color: var(--footer-color);
+}
 .address {
   font-family: var(--main-font);
   font-style: normal;
@@ -352,7 +385,6 @@ h4 {
   margin-top: 20px;
 }
 .footer-eaddress {
-  color: var(--footer-eadr-color);
   display: flex;
   flex-direction: column;
 }
@@ -362,6 +394,7 @@ h4 {
 .footer-eaddress a {
   margin-top: 9px;
   height: 21px;
+  color: var(--footer-eadr-color);
 }
 .footer-eaddress :hover,
 .footer-eaddress :focus {
