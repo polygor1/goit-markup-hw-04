@@ -20,10 +20,11 @@
   --prtf-border-color: #eee;
   --face-color: #ffffff;
   --footer-color: #ffffff;
-  --footer-eadr-color: #ffffff99;
+  --footer-eadr-color: rgba(255, 255, 255, 0.6);
   --background-face-color: #2f303a;
   --background-footer-color: #2f303a;
   --background-team-color: #f5f4fa;
+  --background-footer-icon-color: #ffffff1a;
 }
 
 * {
@@ -95,7 +96,7 @@ ul {
 .header .container {
   display: flex;
   flex-direction: row;
-  margin-top: 0px;
+  /* margin-top: 0px; */
 }
 .logo {
   font-family: var(--logo-font);
@@ -109,9 +110,8 @@ ul {
 .logoweb {
   color: var(--logo-color);
 }
-/* .navigation {
-  color: var(--title-color);
-} */
+.navigation {
+}
 .navigation,
 .eadress {
   font-weight: 500;
@@ -127,7 +127,6 @@ ul {
 }
 .nav-list-item {
   margin-right: 50px;
-  color: var(--title-color);
 }
 .nav-list-str {
   color: var(--title-color);
@@ -144,8 +143,29 @@ ul {
   color: var(--touch-color);
 }
 .eadress {
-  width: 1200px;
+  padding: 0;
+  display: flex;
   justify-content: flex-end;
+}
+.eadr-mail::before,
+.eadr-tel::before {
+  content: '';
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #afe6ff;
+}
+.eadr-mail::before {
+  background-image: url('./images/icons.svg#icon-envelope');
+  width: 16px;
+  height: 10px;
+  fill: var(--regular-color);
+  stroke: #f51905;
+}
+.eadr-tel::before {
+  background-image: url('./images/icons.svg#icon-smartphone');
+  width: 10px;
+  height: 16px;
+  fill: var(--regular-color);
 }
 .eadr-mail,
 .eadr-tel {
@@ -290,11 +310,11 @@ ul {
   margin-top: 10px;
   margin-bottom: 16px;
 }
-.team-icons-list {
+.icons-socnet-list {
   display: flex;
   justify-content: center;
 }
-.team-icons-list li {
+.socnet {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -302,7 +322,7 @@ ul {
   justify-content: center;
   align-items: center;
 }
-.team-icons-list li:not(last-child) {
+.socnet:not(last-child) {
   margin-right: 10px;
 }
 .icon-socnet {
@@ -313,7 +333,7 @@ ul {
   fill: var(--ico-regular-color);
 }
 .icon-socnet:hover,
-.team-icons-list li:hover {
+.socnet:hover {
   background-color: var(--ico-accent-color);
   fill: var(--ico-ligt-accent-color);
 }
@@ -399,6 +419,41 @@ ul {
 .footer-eaddress :hover,
 .footer-eaddress :focus {
   color: var(--touch-color);
+}
+.footer .subscribe {
+  /* flex-direction: row; */
+}
+/* .subscribe .container {
+  flex-direction: row;
+  justify-content: start;
+} */
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  width: 206px;
+}
+.subscribe-text {
+  text-transform: uppercase;
+  color: var(--footer-color);
+  margin-bottom: 20px;
+}
+.subscribe .icons-socnet-list {
+  display: flex;
+  justify-content: row wrap;
+}
+.subscribe .socnet {
+  background-color: var(--background-footer-icon-color);
+}
+.subscribe .socnet:not(last-child) {
+  margin-right: 10px;
+}
+.subscribe .icon-socnet {
+  fill: var(--footer-color);
+}
+.subscribe .icon-socnet:hover,
+.subscribe .socnet:hover {
+  background-color: var(--ico-accent-color);
+  fill: var(--ico-ligt-accent-color);
 }
 
 /* === PORTFOLIO === */
