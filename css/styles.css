@@ -139,7 +139,10 @@ ul {
 .eadr-mail:hover,
 .eadr-mail:focus,
 .eadr-tel:hover,
-.eadr-tel:focus {
+.eadr-tel:focus,
+.eadr-ico:hover,
+.eadr-ico:focus {
+  fill: var(--touch-color);
   color: var(--touch-color);
 }
 .eadress {
@@ -147,30 +150,22 @@ ul {
   display: flex;
   justify-content: flex-end;
 }
-.eadr-mail::before,
-.eadr-tel::before {
-  content: '';
-  display: inline-block;
-  margin-right: 10px;
-  background-color: #afe6ff;
-}
-.eadr-mail::before {
-  background-image: url('./images/icons.svg#icon-envelope');
-  width: 16px;
-  height: 10px;
-  fill: var(--regular-color);
-  stroke: #f51905;
-}
-.eadr-tel::before {
-  background-image: url('./images/icons.svg#icon-smartphone');
-  width: 10px;
-  height: 16px;
-  fill: var(--regular-color);
-}
 .eadr-mail,
 .eadr-tel {
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   margin-left: 50px;
   color: var(--regular-color);
+}
+.eadr-ico {
+  fill: var(--regular-color);
+  margin-right:10px ;
+}
+.eadr-ico:hover,
+.eadr-ico:focus {
+  fill: var(--touch-color);
 }
 
 /* --- HERO--- */
