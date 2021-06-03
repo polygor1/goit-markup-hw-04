@@ -5,7 +5,6 @@
   --logo-color: #2196f3;
   --logo-light: #fff;
   --logo-dark: #000;
-
   --touch-color: #2196f3;
   --ico-accent-color: #2196f3;
   --ico-ligt-accent-color: #ffffff;
@@ -365,7 +364,6 @@ ul {
 }
 .icon-custom {
   fill: var(--ico-custom-color);
-  height: 60px;
 }
 .icon-custom:hover {
   fill: var(--ico-accent-color);
@@ -507,18 +505,12 @@ ul {
 .portfolio-list {
   display: flex;
   flex-flow: row wrap;
-  /* flex-basis */
-  /* margin-left: -30px;
-  margin-bottom: -30px; */
 }
 .portfolio-card {
   display: flex;
   flex-flow: column;
   margin-top: 30px;
   margin-right: 30px;
-  /* flex-basis: calc((100%-90px)/3);
-  margin-left: 30px;
-  margin-bottom: 30px; */
 }
 .portfolio-card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
