@@ -389,9 +389,7 @@ ul {
 .footer-list {
   display: flex;
   flex-direction: row;
-
 }
-
 .address {
   font-family: var(--main-font);
   font-style: normal;
@@ -426,7 +424,6 @@ ul {
 .footer-one-eaddr a:focus {
   color: var(--touch-color);
 }
-
 .join {
   display: flex;
   flex-direction: column;
