@@ -8,6 +8,7 @@
   --touch-color: #2196f3;
   --ico-accent-color: #2196f3;
   --ico-ligt-accent-color: #ffffff;
+  --ico-title-color:#212121;
   --ico-regular-color: #afb1b8;
   --ico-custom-color: #afb1b8;
   --background-ico-ftrs-color: #f5f4fa;
@@ -247,7 +248,7 @@ ul {
 .icon-ftrs {
   height: 70px;
   width: 70px;
-  fill: var(--ico-regular-color);
+  fill: var(--ico-title-color);
 }
 .features-text {
   font-size: 14px;
@@ -327,16 +328,16 @@ ul {
   margin-right: 10px;
 }
 .icon-socnet {
-  width: 20px;
-  height: 20px;
   justify-content: center;
   align-items: center;
   fill: var(--ico-regular-color);
 }
-.socnet:hover {
+.socnet:hover,
+.socnet:focus {
   background-color: var(--ico-accent-color);
 }
-.socnet:hover .icon-socnet {
+.socnet:hover .icon-socnet,
+.socnet:focus .icon-socnet {
   fill: var(--ico-ligt-accent-color);
 }
 
@@ -366,10 +367,12 @@ ul {
 .icon-custom {
   fill: var(--ico-custom-color);
 }
-.customers-icon-item:hover {
+.customers-icon-item:hover,
+.customers-icon-item:focus {
   border: 1px solid var(--ico-accent-color);
 }
-.customers-icon-item:hover .icon-custom {
+.customers-icon-item:hover .icon-custom,
+.customers-icon-item:focus .icon-custom {
   fill: var(--ico-accent-color);
 }
 
@@ -447,7 +450,9 @@ ul {
   fill: var(--footer-color);
 }
 .join .icon-socnet:hover,
-.join .socnet:hover {
+.join .icon-socnet:focus,
+.join .socnet:hover,
+.join .socnet:focus {
   background-color: var(--ico-accent-color);
   fill: var(--ico-ligt-accent-color);
 }
