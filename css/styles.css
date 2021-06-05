@@ -236,7 +236,6 @@ ul {
 }
 .features-icon-item {
   display: flex;
-  padding: auto;
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
@@ -343,7 +342,7 @@ ul {
 /* ---REGULAR CUSTOMERS--- */
 
 .customers {
-  padding: 120px 0 96зч;
+  padding: 120px 0 96px;
 }
 .customers-titul {
   margin-bottom: 50px;
@@ -354,7 +353,6 @@ ul {
 }
 .customers-icon-item {
   display: flex;
-  padding: auto;
   justify-content: center;
   align-items: center;
   width: 170px;
@@ -438,7 +436,6 @@ ul {
 }
 .join .icons-socnet-list {
   display: flex;
-  justify-content: row wrap;
 }
 .join .socnet {
   background-color: var(--background-footer-icon-color);
