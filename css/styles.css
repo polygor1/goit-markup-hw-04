@@ -8,7 +8,7 @@
   --touch-color: #2196f3;
   --ico-accent-color: #2196f3;
   --ico-ligt-accent-color: #ffffff;
-  --ico-title-color:#212121;
+  --ico-title-color: #212121;
   --ico-regular-color: #afb1b8;
   --ico-custom-color: #afb1b8;
   --background-ico-ftrs-color: #f5f4fa;
@@ -21,8 +21,8 @@
   --face-color: #ffffff;
   --footer-color: #ffffff;
   --footer-eadr-color: #ffffff99;
-  --backgound-dark-face-color: #2F303A;
-  --background-face-color: #C4C4C4;
+  --backgound-dark-face-color: #2f303a;
+  --background-face-color: #c4c4c4;
   --background-footer-color: #2f303a;
   --background-team-color: #f5f4fa;
   --background-footer-icon-color: #ffffff1a;
@@ -132,8 +132,7 @@ ul {
   color: var(--touch-color);
 }
 .nav-list-str:hover,
-.nav-list-str:focus
-{
+.nav-list-str:focus {
   color: var(--touch-color);
 }
 .eadress {
@@ -152,19 +151,18 @@ ul {
 }
 .eadr-ico {
   fill: var(--regular-color);
-  margin-right:10px ;
+  margin-right: 10px;
 }
 .eadr-mail:hover,
 .eadr-mail:focus,
-.eadr-tel:hover ,
-.eadr-tel:focus  {
+.eadr-tel:hover,
+.eadr-tel:focus {
   color: var(--touch-color);
 }
 .eadr-mail:hover .eadr-ico,
 .eadr-mail:focus .eadr-ico,
 .eadr-tel:hover .eadr-ico,
-.eadr-tel:focus .eadr-ico
-{
+.eadr-tel:focus .eadr-ico {
   fill: var(--touch-color);
 }
 
@@ -176,7 +174,7 @@ ul {
   padding: 0;
 }
 .hero .container {
-  width: 1600px;
+  max-width: 1600px;
   padding: 200px 0 200px;
   background-image: linear-gradient(#2f303a66, #2f303a66),
     url(../images/imgq.jpg);
@@ -287,8 +285,7 @@ ul {
 }
 .team-card {
   background: #ffffff;
-  box-shadow: 0px 1px 3px #0000001f,
-    0px 1px 1px #00000024,
+  box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024,
     0px 2px 1px #00000033;
   border-radius: 0px 0px 4px 4px;
 }
@@ -409,7 +406,8 @@ ul {
 .footer-one .logo {
   margin-right: 0;
   color: var(--footer-color);
-}.addres p {
+}
+.addres p {
   height: 21px;
 }
 .footer-one-eaddr {
@@ -487,8 +485,7 @@ ul {
   cursor: pointer;
   background-color: var(--touch-color);
   color: var(--face-color);
-  box-shadow: 0px 3px 1px #0000001a, 
-    0px 1px 2px #00000014,
+  box-shadow: 0px 3px 1px #0000001a, 0px 1px 2px #00000014,
     0px 2px 2px #0000001f;
 }
 
@@ -517,8 +514,7 @@ ul {
   margin-right: 30px;
 }
 .portfolio-card:hover {
-  box-shadow: 0px 1px 1px #0000001f,
-    0px 4px 4px #0000000f,
+  box-shadow: 0px 1px 1px #0000001f, 0px 4px 4px #0000000f,
     1px 4px 6px #00000029;
 }
 .portfolio-card:nth-child(-n + 3) {
